@@ -15,7 +15,7 @@
       "rememberSessionExpiration": 0
     },
     "accountOptions": {
-      "verifyEmail": false,
+      "verifyEmail": true,
       "verifyProviderEmail": false,
       "useCodeVerification": false,
       "allowUnverifiedLogin": false,
@@ -43,8 +43,8 @@
         "hourlyFailedLoginThreshold": 0,
         "lockoutTimeSec": 0
       },
-      "passwordChangeInterval": 0,
-      "passwordHistorySize": 0,
+      "passwordChangeInterval": 365,
+      "passwordHistorySize": 3,
       "riskAssessmentWithReCaptchaV3": false,
       "riskAssessmentWithTransUnion": false,
       "sendUnknownLocationNotification": false,
@@ -148,7 +148,7 @@
         },
         {
           "name": "gigyaEmail",
-          "enabled": false
+          "enabled": true
         },
         {
           "name": "gigyaTotp",
