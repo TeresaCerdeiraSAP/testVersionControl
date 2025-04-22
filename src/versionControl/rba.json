@@ -15,7 +15,7 @@
       "rememberSessionExpiration": 0
     },
     "accountOptions": {
-      "verifyEmail": false,
+      "verifyEmail": true,
       "verifyProviderEmail": false,
       "useCodeVerification": false,
       "allowUnverifiedLogin": false,
