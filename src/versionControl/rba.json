@@ -15,7 +15,7 @@
       "rememberSessionExpiration": 0
     },
     "accountOptions": {
-      "verifyEmail": true,
+      "verifyEmail": false,
       "verifyProviderEmail": false,
       "useCodeVerification": false,
       "allowUnverifiedLogin": false,
@@ -28,7 +28,7 @@
     },
     "passwordComplexity": {
       "minCharGroups": 0,
-      "minLength": 6
+      "minLength": 8
     },
     "security": {
       "accountLockout": {
@@ -145,6 +145,21 @@
         {
           "name": "gigyaPhone",
           "enabled": true
+        },
+        {
+          "name": "gigyaEmail",
+          "enabled": false
+        },
+        {
+          "name": "gigyaTotp",
+          "enabled": false
+        },
+        {
+          "name": "gigyaPush",
+          "enabled": false,
+          "params": {
+            "defaultRuleset": "_off"
+          }
         }
       ],
       "emailProvider": {
