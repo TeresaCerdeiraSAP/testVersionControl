@@ -27,9 +27,18 @@
   ],
   "enableDataSharing": true,
   "isCDP": false,
-  "invisibleRecaptcha": {},
-  "recaptchaV2": {},
-  "funCaptcha": {},
+  "invisibleRecaptcha": {
+    "SiteKey": "",
+    "Secret": ""
+  },
+  "recaptchaV2": {
+    "SiteKey": "123",
+    "Secret": "123"
+  },
+  "funCaptcha": {
+    "SiteKey": "",
+    "Secret": ""
+  },
   "customAPIDomainPrefix": "",
   "enableHSTS": false
 }
