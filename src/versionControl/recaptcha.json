@@ -49,11 +49,11 @@
     "enforceCoppa": false
   },
   "riskProvidersConfig": {
-    "subscriberId": null,
-    "account": null,
-    "password": null,
+    "subscriberId": "abc",
+    "account": "abc",
+    "password": "abc",
     "environment": 0,
-    "integrationPoint": null,
+    "integrationPoint": "abc",
     "data": null
   }
 }
