@@ -48,7 +48,7 @@
   },
   "emailVerification": {
     "nextURL": "https://url.com",
-    "verificationEmailExpiration": 144000,
+    "verificationEmailExpiration": 129600,
     "autoLogin": true,
     "defaultLanguage": "en",
     "emailTemplates": {
