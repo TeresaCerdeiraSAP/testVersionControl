@@ -1,5 +1,27 @@
 {
-  "recaptchaConfig": [],
+  "recaptchaConfig": [
+    {
+      "Type": 1,
+      "Key": "123",
+      "Secret": "123"
+    },
+    {
+      "Type": 2,
+      "Key": "456",
+      "Secret": "456"
+    },
+    {
+      "Type": 4,
+      "Key": "",
+      "Secret": ""
+    },
+    {
+      "Type": 10,
+      "Key": "",
+      "Secret": "",
+      "Data": "{\"enable\":false,\"requireCaptchaOnRegistration\":false,\"requireCaptchaOnResetPassword\":false,\"requireCaptchaOnOTP\":false}"
+    }
+  ],
   "securityPolicies": {
     "accountLockout": {
       "failedLoginThreshold": 0,

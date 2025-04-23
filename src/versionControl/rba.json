@@ -43,8 +43,8 @@
         "hourlyFailedLoginThreshold": 0,
         "lockoutTimeSec": 0
       },
-      "passwordChangeInterval": 365,
-      "passwordHistorySize": 3,
+      "passwordChangeInterval": 0,
+      "passwordHistorySize": 0,
       "riskAssessmentWithReCaptchaV3": false,
       "riskAssessmentWithTransUnion": false,
       "sendUnknownLocationNotification": false,
@@ -148,7 +148,7 @@
         },
         {
           "name": "gigyaEmail",
-          "enabled": true
+          "enabled": false
         },
         {
           "name": "gigyaTotp",

@@ -6,7 +6,7 @@
     "*.versioncontroltestteresa/*"
   ],
   "tags": [],
-  "description": "",
+  "description": "asdasd",
   "captchaProvider": "Google",
   "settings": {
     "CNAME": "",
@@ -28,8 +28,8 @@
   "enableDataSharing": true,
   "isCDP": false,
   "invisibleRecaptcha": {
-    "SiteKey": "",
-    "Secret": ""
+    "SiteKey": "456",
+    "Secret": "456"
   },
   "recaptchaV2": {
     "SiteKey": "123",
