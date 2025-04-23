@@ -52,7 +52,7 @@
     },
     "emailVerification": {
       "nextURL": "https://url.com",
-      "verificationEmailExpiration": 129600,
+      "verificationEmailExpiration": 144000,
       "autoLogin": true,
       "defaultLanguage": "en",
       "emailTemplates": {
@@ -196,7 +196,47 @@
   },
   "2": {
     "policy": {
-      "commonRules": [],
+      "commonRules": [
+        {
+          "action": {
+            "authLevel": 20,
+            "challenge": "none",
+            "type": "TFA"
+          },
+          "rootFactor": {
+            "type": "failedLogins",
+            "scope": [
+              "account"
+            ],
+            "threshold": 99999,
+            "resetInterval": 3600
+          },
+          "id": null,
+          "scope": "Login",
+          "description": "TFA",
+          "enabled": false
+        },
+        {
+          "action": {
+            "scope": [
+              "account"
+            ],
+            "type": "captcha"
+          },
+          "rootFactor": {
+            "type": "failedLogins",
+            "scope": [
+              "account"
+            ],
+            "threshold": 3,
+            "resetInterval": 3600
+          },
+          "id": null,
+          "scope": "Login",
+          "description": "On multiple failed login attempts > force CAPTCHA on account",
+          "enabled": false
+        }
+      ],
       "rulesSets": [
         {
           "rules": [],
