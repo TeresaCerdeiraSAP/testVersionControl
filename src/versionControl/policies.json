@@ -12,8 +12,8 @@
   },
   "accountOptions": {
     "verifyEmail": true,
-    "verifyProviderEmail": false,
-    "useCodeVerification": false,
+    "verifyProviderEmail": true,
+    "useCodeVerification": true,
     "allowUnverifiedLogin": false,
     "preventLoginIDHarvesting": false,
     "sendWelcomeEmail": false,
@@ -47,8 +47,9 @@
     "signDeviceId": "js_latest"
   },
   "emailVerification": {
-    "verificationEmailExpiration": 86400,
-    "autoLogin": false,
+    "nextURL": "https://url.com",
+    "verificationEmailExpiration": 144000,
+    "autoLogin": true,
     "defaultLanguage": "en",
     "emailTemplates": {
       "en": "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n    <head>\n\t\t<META name=\"from\"    content=\"Name <noreply@YOUR-SITE.com>\" />\n\t\t<META name=\"subject\" content=\"Account Activation\" />\n    </head>\n    <body style=\"font-family: Arial; font-size: 13px; line-height: 16px;\">\n        <div style=\"background: url('https://cdns.gigya.com/site/images/email/background.png') repeat-x; width: 720px; padding:13px 0; margin:0 auto;\">\n            <div style=\"background: #fff; border-radius: 3px; margin: 0 auto; width: 693px; \">\n                <div style=\"padding:30px 30px 29px;margin: 0px auto;\">\n\t\t            <p>Hello <b>$firstName $lastName</b>,</p>\n\t\t            <p>Please click this link to activate your account:</p>\n                    <p><a href=\"$emailVerificationLink\">Activate link</a></p>\n                </div>\n            </div>\n        </div>\n    </body>\n</html>\n\n\n"
@@ -65,9 +66,10 @@
     }
   },
   "doubleOptIn": {
-    "nextURL": "",
+    "nextURL": "https://socialize.eu1.gigya.com/gs/ConfirmEmail.aspx",
+    "nextExpiredURL": "https://socialize.eu1.gigya.com/gs/LinkExpired.aspx",
     "defaultLanguage": "en",
-    "confirmationLinkExpiration": 1209600,
+    "confirmationLinkExpiration": 1440000,
     "confirmationEmailTemplates": {
       "es": "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<META name=\"from\" content=\"Name <noreply@YOUR-SITE.com>\" />\n<META name=\"subject\" content=\"Confirme su suscripción\" />\n<style>a.button{display:inline-block;background-color:#1371b9;border:none;border-radius:8px;color:#FFF;text-align:center;text-decoration:none;padding:8px 10px;width:200px;transition:all 0.5s;cursor:pointer;margin:5px}a.button span{cursor:pointer;display:inline-block;position:relative;transition:0.5s}body{font-family:Arial;font-size:13px;line-height:16px}div.background{background:url('https://cdns.gigya.com/site/images/email/background.png') repeat-x;width:720px;padding:13px 0;margin:0 auto}div.inner-background{background:#fff;border-radius:3px;margin:0 auto;width:693px}div.inner-pane{padding:30px 30px 29px;margin:0px auto}</style>\n</head>\n<body>\n<div class=\"background\"><div class=\"inner-background\">\n<div class=\"inner-pane\">\n<p>Hola, <b>$firstName</b> <b>$lastName</b>,</p>\n<p>Hemos recibido su petición para suscribirse a nuestro boletín.</p>\n<p>$subscriptionList</p><p>Por favor, confirme la suscripción.</p> \n<a href=\"$confirmationURL\" class=\"button\"><span>Sí, suscribirme</span></a>\n<p>Si ha recibido este e-mail por error, simplemente bórrelo. No se suscribirá si no hace clic en el botón de confirmación de arriba.</p>\n<p>Si tiene alguna consulta o sugerencia, por favor, contacte con nosotros enviando un e-mail a: &lt;emailAddress&gt;.</p>\n</div>\n</div>\n</body>\n</html>",
       "fr": "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<META name=\"from\" content=\"Name <noreply@YOUR-SITE.com>\" />\n<META name=\"subject\" content=\"Confirmez votre inscription\" />\n<style>a.button{display:inline-block;background-color:#1371b9;border:none;border-radius:8px;color:#FFF;text-align:center;text-decoration:none;padding:8px 10px;width:200px;transition:all 0.5s;cursor:pointer;margin:5px}a.button span{cursor:pointer;display:inline-block;position:relative;transition:0.5s}body{font-family:Arial;font-size:13px;line-height:16px}div.background{background:url('https://cdns.gigya.com/site/images/email/background.png') repeat-x;width:720px;padding:13px 0;margin:0 auto}div.inner-background{background:#fff;border-radius:3px;margin:0 auto;width:693px}div.inner-pane{padding:30px 30px 29px;margin:0px auto}</style>\n</head>\n<body>\n<div class=\"background\"><div class=\"inner-background\">\n<div class=\"inner-pane\">\n<p>Bonjour <b>$firstName</b> <b>$lastName</b>,</p>\n<p>Nous avons reçu votre demande de souscription à notre lettre d'informations :</p>\n<p>$subscriptionList</p><p>Veuillez confirmer l'inscription.</p> \n<a href=\"$confirmationURL\" class=\"button\"><span>Oui, M'inscrire</span></a>\n<p>Si vous avez reçu ce courriel par erreur, supprimez-le simplement. Vous ne serez pas abonné si vous ne cliquez pas sur le bouton de confirmation ci-dessus.</p>\n<p>Si vous avez des questions ou des suggestions, contactez-nous en envoyant un courrier électronique à : &lt;emailAddress&gt;.</p>\n</div>\n</div>\n</body>\n</html>",

@@ -18,8 +18,9 @@
     "emailTemplates": {
       "en": "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n    <head>\n\t\t<META name=\"from\"    content=\"Name <noreply@YOUR-SITE.com>\" />\n\t\t<META name=\"subject\" content=\"Account Activation\" />\n    </head>\n    <body style=\"font-family: Arial; font-size: 13px; line-height: 16px;\">\n        <div style=\"background: url('https://cdns.gigya.com/site/images/email/background.png') repeat-x; width: 720px; padding:13px 0; margin:0 auto;\">\n            <div style=\"background: #fff; border-radius: 3px; margin: 0 auto; width: 693px; \">\n                <div style=\"padding:30px 30px 29px;margin: 0px auto;\">\n\t\t            <p>Hello <b>$firstName $lastName</b>,</p>\n\t\t            <p>Please click this link to activate your account:</p>\n                    <p><a href=\"$emailVerificationLink\">Activate link</a></p>\n                </div>\n            </div>\n        </div>\n    </body>\n</html>\n\n\n"
     },
-    "verificationEmailExpiration": 86400,
-    "autoLogin": false
+    "nextURL": "https://url.com",
+    "verificationEmailExpiration": 144000,
+    "autoLogin": true
   },
   "emailNotifications": {
     "welcomeEmailDefaultLanguage": "en",
@@ -81,8 +82,9 @@
       "cs": "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<META name=\"from\" content=\"Name <noreply@YOUR-SITE.com>\" />\n<META name=\"subject\" content=\"Potvrďte své přihlášení k odběru\" />\n<style>a.button{display:inline-block;background-color:#1371b9;border:none;border-radius:8px;color:#FFF;text-align:center;text-decoration:none;padding:8px 10px;width:200px;transition:all 0.5s;cursor:pointer;margin:5px}a.button span{cursor:pointer;display:inline-block;position:relative;transition:0.5s}body{font-family:Arial;font-size:13px;line-height:16px}div.background{background:url('https://cdns.gigya.com/site/images/email/background.png') repeat-x;width:720px;padding:13px 0;margin:0 auto}div.inner-background{background:#fff;border-radius:3px;margin:0 auto;width:693px}div.inner-pane{padding:30px 30px 29px;margin:0px auto}</style>\n</head>\n<body>\n<div class=\"background\"><div class=\"inner-background\">\n<div class=\"inner-pane\">\n<p>Dobrý den <b>$firstName</b> <b>$lastName</b>,</p>\n<p>obdrželi jsme Váš požadavek na přihlášení k odběru našeho novinkového zpravodaje:</p>\n<p>$subscriptionList</p><p>Potvrďte prosím předplatné.</p> \n<a href=\"$confirmationURL\" class=\"button\"><span>Ano, přihlaste mě</span></a>\n<p>Pokud jste tento e-mail dostali omylem, jednoduše ho odstraňte. Nebudete přihlášeni k odběru, pokud nekliknete na výše uvedené potvrzovací tlačítko.</p>\n<p>Máte-li nějaké dotazy nebo doporučení, pak nás prosím kontaktujte na e-mail: &lt;emailAddress&gt;.</p>\n</div>\n</div>\n</body>\n</html>",
       "hu": "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<META name=\"from\" content=\"Name <noreply@YOUR-SITE.com>\" />\n<META name=\"subject\" content=\"Erősítse meg feliratkozását\" />\n<style>a.button{display:inline-block;background-color:#1371b9;border:none;border-radius:8px;color:#FFF;text-align:center;text-decoration:none;padding:8px 10px;width:200px;transition:all 0.5s;cursor:pointer;margin:5px}a.button span{cursor:pointer;display:inline-block;position:relative;transition:0.5s}body{font-family:Arial;font-size:13px;line-height:16px}div.background{background:url('https://cdns.gigya.com/site/images/email/background.png') repeat-x;width:720px;padding:13px 0;margin:0 auto}div.inner-background{background:#fff;border-radius:3px;margin:0 auto;width:693px}div.inner-pane{padding:30px 30px 29px;margin:0px auto}</style>\n</head>\n<body>\n<div class=\"background\"><div class=\"inner-background\">\n<div class=\"inner-pane\">\n<p>Üdv <b>$lastName <b>$firstName</b>!</b>,</p>\n<p>Megkaptuk hírlevelünkre való feliratkozási kérelmét:</p>\n<p>$subscriptionList</p><p>Kérjük, erősítse meg feliratkozását.</p> \n<a href=\"$confirmationURL\" class=\"button\"><span>Igen, feliratkozom</span></a>\n<p>Ha véletlenül kapta ezt az e-mailt, egyszerűen törölje. Ha nem kattint rá a fenti megerősítő gombra, Ön nem iratkozik fel.</p>\n<p>Amennyiben kérdése vagy kérése van, kérjük, vegye fel velünk a kapcsolatot a következő e-mailen címen keresztül: &lt;emailAddress&gt;.</p>\n</div>\n</div>\n</body>\n</html>"
     },
-    "nextURL": "",
-    "confirmationLinkExpiration": 1209600
+    "nextURL": "https://socialize.eu1.gigya.com/gs/ConfirmEmail.aspx",
+    "nextExpiredURL": "https://socialize.eu1.gigya.com/gs/LinkExpired.aspx",
+    "confirmationLinkExpiration": 1440000
   },
   "doubleOptInCommunications": {
     "defaultLanguage": "en",
