@@ -49,11 +49,11 @@
     "enforceCoppa": false
   },
   "riskProvidersConfig": {
-    "subscriberId": "abc",
-    "account": "abc",
-    "password": "abc",
+    "subscriberId": "TUDR",
+    "account": "TUDR",
+    "password": "TUDR",
     "environment": 0,
-    "integrationPoint": "abc",
+    "integrationPoint": "TUDR",
     "data": null
   }
 }
