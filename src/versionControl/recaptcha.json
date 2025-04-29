@@ -6,6 +6,12 @@
       "Secret": "123"
     },
     {
+      "Type": 3,
+      "Key": "789",
+      "Secret": "789",
+      "Data": "{\"Enable\":false,\"RiskAssessmentEP\":{\"Register\":false,\"Login\":false,\"ResetPassword\":false,\"OtpLogin\":false,\"LiteRegistration\":false}}"
+    },
+    {
       "Type": 2,
       "Key": "456",
       "Secret": "456"
@@ -38,12 +44,12 @@
     "passwordChangeInterval": 0,
     "passwordHistorySize": 0,
     "riskAssessmentWithReCaptchaV3": false,
-    "riskAssessmentWithTransUnion": false,
+    "riskAssessmentWithTransUnion": true,
     "sendUnknownLocationNotification": false,
     "signDeviceId": "js_latest"
   },
   "registrationPolicies": {
-    "requireCaptcha": false,
+    "requireCaptcha": true,
     "requireSecurityQuestion": false,
     "requireLoginID": false,
     "enforceCoppa": false
