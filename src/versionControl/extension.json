@@ -1,3 +1,18 @@
 {
-  "result": []
+  "result": [
+    {
+      "created": "2025-04-30T09:24:12.1023564Z",
+      "lastModified": "2025-04-30T09:25:36.5363516Z",
+      "extensionFuncUrl": "https://www.url1.com",
+      "description": "description 1",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "headers": [],
+      "integration": "Generic",
+      "id": "a4ed4209695a4b71a5b2e9df8441134c",
+      "extensionPoint": "OnBeforeAccountsRegister",
+      "friendlyName": "extension 1",
+      "enabled": true
+    }
+  ]
 }
