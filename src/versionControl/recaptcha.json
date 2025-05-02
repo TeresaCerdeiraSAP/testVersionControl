@@ -6,12 +6,6 @@
       "Secret": "123"
     },
     {
-      "Type": 3,
-      "Key": "789",
-      "Secret": "789",
-      "Data": "{\"Enable\":false,\"RiskAssessmentEP\":{\"Register\":false,\"Login\":false,\"ResetPassword\":false,\"OtpLogin\":false,\"LiteRegistration\":false}}"
-    },
-    {
       "Type": 2,
       "Key": "456",
       "Secret": "456"

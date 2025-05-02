@@ -9,7 +9,7 @@
   "description": "asdasd",
   "captchaProvider": "Google",
   "settings": {
-    "CNAME": "",
+    "CNAME": "testestest.com",
     "shortURLDomain": "",
     "shortURLRedirMethod": "js",
     "encryptPII": true
