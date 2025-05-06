@@ -7,6 +7,8 @@
   },
   "gigyaPlugins": {
     "connectWithoutLoginBehavior": "alwaysLogin",
+    "defaultRegScreenSet": "Default-RegistrationLogin",
+    "defaultMobileRegScreenSet": "Default-RegistrationLogin",
     "sessionExpiration": 0,
     "rememberSessionExpiration": 0
   },

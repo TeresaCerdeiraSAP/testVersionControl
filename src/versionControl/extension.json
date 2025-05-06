@@ -1,3 +1,27 @@
 {
-  "result": []
+  "result": [
+    {
+      "created": "2025-05-05T10:43:23.1406648Z",
+      "extensionFuncUrl": "https://www.url4.com",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "id": "91cb261d65524f598a0991b675dba181",
+      "extensionPoint": "OnBeforeAccountsLogin",
+      "friendlyName": "def",
+      "enabled": true
+    },
+    {
+      "created": "2025-05-05T10:46:00.7915171Z",
+      "extensionFuncUrl": "https://www.url3.com",
+      "description": "",
+      "timeout": 1000,
+      "fallback": "IgnoreAllErrors",
+      "headers": [],
+      "integration": "Generic",
+      "id": "985f53957d734e52bbf1a9f5e45b0fb1",
+      "extensionPoint": "OnBeforeSendSMS",
+      "friendlyName": "test8",
+      "enabled": false
+    }
+  ]
 }
